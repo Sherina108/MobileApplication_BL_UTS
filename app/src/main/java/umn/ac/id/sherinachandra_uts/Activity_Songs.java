@@ -160,14 +160,14 @@ public class Activity_Songs extends AppCompatActivity {
         }
     };
 
-        private void play(){
-            if (mMediaPlayer!=null && mMediaPlayer.isPlaying()){
-                mMediaPlayer.pause();
-                play.setImageResource(R.drawable.ic_baseline_play_circle_outline_24);
-            }
-            else {
-                mMediaPlayer.start();
-                play.setImageResource(R.drawable.ic_baseline_pause_circle_outline_24);
-            }
+    private void play(){
+        if (mMediaPlayer!=null && mMediaPlayer.isPlaying()){
+            mMediaPlayer.pause();
+            play.setImageResource(R.drawable.ic_baseline_play_circle_outline_24);
         }
+        else {
+            mMediaPlayer.start();
+            play.setImageResource(R.drawable.ic_baseline_pause_circle_outline_24);
+        }
+    }
 }

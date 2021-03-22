@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide(); //menyembunyikan bar activity
         btnProfil = (Button) this.findViewById(R.id.btnProfil);
         btnLogin = (Button) this.findViewById(R.id.btnLogin);
 

@@ -6,16 +6,22 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SherinaChandra_UTS">
-        <activity android:name=".ActivityList"></activity>
-        <activity android:name=".Activity_Songs" />
-        <activity android:name=".Activity_Login" />
-        <activity android:name=".Activity_Profile" />
+        <activity android:name=".ActivityList"
+            android:label="List Songs"></activity>
+        <activity android:name=".Activity_Songs"
+            android:label="Now Playing"/>
+        <activity android:name=".Activity_Login"
+            android:label="Login"/>
+        <activity
+            android:name=".Activity_Profile"
+            android:label="My Profile"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
